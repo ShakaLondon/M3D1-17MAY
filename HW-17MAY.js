@@ -134,7 +134,24 @@ console.log(newString)
 /*
 7)
 Create a function that returns the city name of a given string, if the string begins with "Los" or "New", otherwise returns blank.
-*/
+*/ 
+
+let citySecondName = function secondHalf (inputCity) {
+    let losOrNot = inputCity.includes(('Los'||"los"))
+    let otherName
+
+    if (losOrNot === true){
+
+        otherName = inputCity.split(('Los'||'los'))
+
+    }
+
+    return otherName[1]
+}
+
+let outputCity = citySecondName('los Angeles')
+
+console.log(outputCity)
 
 /*
 8)
