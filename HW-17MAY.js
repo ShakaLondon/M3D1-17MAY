@@ -187,9 +187,37 @@ let totalArray = givenArray(numArray)
 console.log(totalArray)
 
 /*
-9)
-Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
+9) Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
+
+let intTwoArray = [33, 22]
+
+let oneOrThree = function isItIncluded13 (arrayIntTwo){
+
+    let numOne = arrayIntTwo[0].toString()
+    let numTwo = arrayIntTwo[1].toString()
+
+    let numOneoTwo = `${numOne}||${numTwo}`
+
+    let includesOne = numOneoTwo.includes('1')
+    let includesThree = numOneoTwo.includes('3')
+
+    console.log('String contains 1', includesOne)
+    console.log('String contains 3', includesThree)
+
+    if (includesOne === true){
+        return true
+    } else if (includesThree === true){
+        return true
+    } else {
+        return false
+    }
+
+}
+
+let doesItContainOneOrThree = oneOrThree(intTwoArray) 
+
+console.log(doesItContainOneOrThree)
 
 /*
 10)
