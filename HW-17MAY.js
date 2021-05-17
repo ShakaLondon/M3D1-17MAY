@@ -137,26 +137,54 @@ Create a function that returns the city name of a given string, if the string be
 */ 
 
 let citySecondName = function secondHalf (inputCity) {
-    let losOrNot = inputCity.includes(('Los'||"los"))
+    let losOrNot = inputCity.includes('Los')
+    let newOrNot = inputCity.includes('New')
+
     let otherName
 
     if (losOrNot === true){
 
-        otherName = inputCity.split(('Los'||'los'))
+        otherName = inputCity.split('Los')
+
+    } else if (newOrNot === true){
+
+        otherName = inputCity.split('New')
 
     }
 
     return otherName[1]
 }
 
-let outputCity = citySecondName('los Angeles')
+let outputCity = citySecondName('New Angeles')
 
 console.log(outputCity)
 
 /*
-8)
-Create a function to calculate the sum of three elements of a given array of integers of length 3.
+8) Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
+
+let givenArray = function sumOfInt(sumArray) { 
+
+    let total = 0
+
+    for (x=0; x<sumArray.length; x++) {
+
+        console.log(sumArray[x])
+
+        total += sumArray[x]
+
+        console.log(total)
+
+    }
+
+    return total
+}
+
+let numArray = [102, 234, 456]
+
+let totalArray = givenArray(numArray)
+
+console.log(totalArray)
 
 /*
 9)
