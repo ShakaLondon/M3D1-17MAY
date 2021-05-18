@@ -364,8 +364,6 @@ let biggestEven = function whichIsBigger2 (x,y,z) {
 }
 
 
-    
-
 let whichNumberIsBiggestEven = biggestEven(66, 205, 105)
 
 console.log(whichNumberIsBiggestEven)
@@ -373,6 +371,38 @@ console.log(whichNumberIsBiggestEven)
 /*
 15) Create a function to check from two given integers, whether one is positive and another one is negative.
 */
+
+let oddOrEven = function oddOrEvenOutput (x,y) {
+
+    let givenInt = [x,y]
+
+    let evenTrue = []
+
+    // console.log(givenInt)
+
+    // givenInt.forEach(function whichOne (element, index) {
+    //     if (element % 2 == 0){
+    //         return evenTrue[index] = `${element} is even`
+    //     } else {
+    //         return evenTrue[index] = `${element} is odd`
+    //     }
+    // })
+
+    givenInt.forEach((element, index) => { 
+        if (element % 2 == 0){
+                return evenTrue[index] = `${element} is even`
+            } else {
+                return evenTrue[index] = `${element} is odd`
+            } } )
+
+    return evenTrue
+}
+
+let oddOrEvenArray = oddOrEven(19,88)
+
+console.log(oddOrEvenArray)
+
+
 
 /*
 16) Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
