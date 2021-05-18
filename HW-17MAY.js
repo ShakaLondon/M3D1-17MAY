@@ -313,9 +313,86 @@ console.log(angleSort)
 13) Create a function to find the index of the greatest element of a given array of integers
 */
 
+let longestStringNum = function (numArray){
+    // let lengthArray = []
+    // for(x=0; x<stringArray.length; x++){
+    //     let lengthSt = stringArray[x].length;
+    //     lengthArray.push(lengthSt)
+    // }
+
+        let biggestNum = Math.max(...numArray)
+        // console.log(lengthArray)
+        console.log(biggestNum)
+
+        let position = numArray.indexOf(biggestNum)
+
+        // let longestArray = stringArray[position]
+
+        return position
+
+}
+
+let positionOfBigNum = longestStringNum ([875, 2483, 758])
+
+console.log(positionOfBigNum)
+
 /*
 14) Create a function to get the largest even number from an array of integers.
 */
+
+let biggestEven = function whichIsBigger2 (x,y,z) {
+
+    let numArray = [x, y, z]
+
+    console.log(numArray)
+
+    numArray.sort((a, b) => b - a)
+
+    console.log(numArray)
+
+    // let biggest = numArray[0]
+
+    // return biggest
+
+//     let evenArray = []
+
+//     numArray.forEach((element) => {
+
+//         // let biggest = Math.max(...lengthArray)
+
+//         ((element % 2) == 0) ? return (`${element}`) : evenArray.push(`${element}`)
+    
+//     })
+// }
+
+    let biggestEvenNum
+
+    for (d=0; d<numArray.length; d++){
+        if (numArray[d] % 2 == 0){
+            biggestEvenNum = numArray[d]
+            break;
+        }
+    }
+
+    return biggestEvenNum
+}
+
+    // return 
+    //      : condition2 ? value2
+    //      : condition3 ? value3
+    //      : value4;
+
+    // if ((a % 2) == 0) {
+
+    // }
+
+
+
+    
+
+let whichNumberIsBiggestEven = biggestEven(66, 205, 105)
+
+console.log(whichNumberIsBiggestEven)
 
 /*
 15) Create a function to check from two given integers, whether one is positive and another one is negative.
