@@ -408,6 +408,28 @@ console.log(oddOrEvenArray)
 16) Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
 */
 
+let upperCase = function upperCase3(givenString) {
+
+    let capitalString = givenString.toUpperCase()
+    let outputString = capitalString
+
+    if (capitalString.length >= 2) {
+        for (x=0; x<3; x++){
+
+            console.log(capitalString[x])
+
+            outputString = outputString.replace(outputString[x], outputString[x].toLowerCase())
+        }
+    }
+
+    return outputString
+
+}
+
+let changeString = upperCase('Today is a sunny day')
+
+console.log(changeString)
+
 /*
 17) Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 */
