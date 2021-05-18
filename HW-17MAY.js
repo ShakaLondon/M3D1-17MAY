@@ -350,20 +350,6 @@ let biggestEven = function whichIsBigger2 (x,y,z) {
 
     console.log(numArray)
 
-    // let biggest = numArray[0]
-
-    // return biggest
-
-//     let evenArray = []
-
-//     numArray.forEach((element) => {
-
-//         // let biggest = Math.max(...lengthArray)
-
-//         ((element % 2) == 0) ? return (`${element}`) : evenArray.push(`${element}`)
-    
-//     })
-// }
 
     let biggestEvenNum
 
@@ -376,16 +362,6 @@ let biggestEven = function whichIsBigger2 (x,y,z) {
 
     return biggestEvenNum
 }
-
-    // return 
-    //      : condition2 ? value2
-    //      : condition3 ? value3
-    //      : value4;
-
-    // if ((a % 2) == 0) {
-
-    // }
-
 
 
     
