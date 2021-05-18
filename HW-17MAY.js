@@ -293,6 +293,22 @@ Types of angles:
     Straight angle: A 180 degree angle.
 */
 
+let whichAngle = function angleOutput(angle){
+
+    return ((angle<90)) ? `Acute Angle`
+         : ((angle===90)) ? `Right Angle`
+         : ((angle>90 && angle<180)) ? `Obtuse Angle`
+         : ((angle===180)) ? `Straight Angle`
+         : ((angle>180 && angle<360)) ? `Reflex Angle`
+         : ((angle===360)) ? `Full Circle`
+         : `This angle is too big. Please choose an angle smaller than 360`;
+
+}
+
+let angleSort = whichAngle(13)
+
+console.log(angleSort)
+
 /*
 13) Create a function to find the index of the greatest element of a given array of integers
 */
