@@ -217,17 +217,70 @@ let oneOrThree = function isItIncluded13 (arrayIntTwo){
 
 let doesItContainOneOrThree = oneOrThree(intTwoArray) 
 
-console.log(doesItContainOneOrThree)
+console.log('String contains 1 or 3:', doesItContainOneOrThree)
 
 /*
 10)
 Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
 */
 
+let intTwoArray2 = [33, 22]
+
+let noOneOrThree = function isItIncluded13 (arrayIntTwo){
+
+    let numOne = arrayIntTwo[0].toString()
+    let numTwo = arrayIntTwo[1].toString()
+
+    let numOneoTwo = `${numOne}||${numTwo}`
+
+    let includesOne = numOneoTwo.includes('1')
+    let includesThree = numOneoTwo.includes('3')
+
+    console.log('String contains 1:', includesOne)
+    console.log('String contains 3:', includesThree)
+
+    if (includesOne === true){
+        return false
+    } else if (includesThree === true){
+        return false
+    } else {
+        return true
+    }
+
+}
+
+let notContainOneOrThree = noOneOrThree(intTwoArray2) 
+
+console.log('String does not contain 1 or 3:', notContainOneOrThree)
+
 /*
-11)
-Create a function to find the longest string from a given array of strings.
+11) Create a function to find the longest string from a given array of strings.
 */
+
+
+
+let longestString = function (stringArray){
+    let lengthArray = []
+    for(x=0; x<stringArray.length; x++){
+        let lengthSt = stringArray[x].length;
+        lengthArray.push(lengthSt)
+    }
+
+        let biggestNum = Math.max(...lengthArray)
+        console.log(lengthArray)
+        console.log(biggestNum)
+
+        let position = lengthArray.indexOf(biggestNum)
+
+        let longestArray = stringArray[position]
+
+        return longestArray
+
+}
+
+let whichIsLongest = longestString (['Hello, my name is Shak', 'Hello World', 'I like Dancing'])
+
+console.log(whichIsLongest)
 
 /*
 12)
