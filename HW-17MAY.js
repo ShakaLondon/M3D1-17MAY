@@ -518,3 +518,19 @@ console.log(outputString)
 Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 
 */
+
+let bbC = function fullText (Acro) {
+
+    let BBC = {B: British, B: Broadcasting, C: Corporation}
+
+    let outputAcro 
+
+    for (const property in BBC) {
+        `${outputAcro}`.push(`${object[property]} + " "`);
+
+}
+
+return outputAcro
+}
+
+let outputText 
