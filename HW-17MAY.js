@@ -432,7 +432,18 @@ console.log(changeString)
 
 /*
 17) Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
-*/
+*/ 
+
+const sumInRange = function inRange (x, y){
+
+    let sum = x+y
+        
+    return ((sum>=50 && sum<=80)) ? 65
+         : 80
+    
+}
+
+console.log(sumInRange(40,35))
 
 /*
 18) Create a function to convert a number to a string, the content of which depends on the number's factors. Follow next example:
@@ -449,6 +460,58 @@ this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
 this would be "34".
 */
+
+let numToString = function toString (inputNum) {
+
+    let factors = []
+
+    let outputStringFactors = ''
+
+    for (x=0; x<=inputNum; x++) {
+        
+        if (inputNum % x == 0) { 
+            factors.push(x)
+        }
+
+    }
+
+    console.log(factors)
+
+
+    let outputString = ''
+
+    factors.forEach((element) => { 
+
+        if (element === 3) { 
+            outputString += `Diego`
+        } else if (element === 5) {
+            outputString += `Riccardo`
+        } else if (element === 7) {
+            outputString += `Stefano`
+        } 
+    })
+
+    console.log(outputString)
+
+    return ((outputString.length == 0)) ? inputNum
+         : outputString
+
+
+
+    // if (outputString.length == 0){
+    //     return inputNum
+    // } else {
+    //     return outputString
+    // }
+
+}
+
+
+
+
+let outputString = numToString(30)
+
+console.log(outputString)
 
 /*
 19)
